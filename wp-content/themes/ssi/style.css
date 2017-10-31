@@ -1,0 +1,941 @@
+/*
+Theme Name: Scotia Surgery Inc.
+Theme URI: scotiasurgery.com
+Description: Scotia Surgery Inc's custom theme
+Version: 1.0
+Author: Matt Cyr
+Author URI: matt@mspacecreative.com
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('images/bg.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  margin: 0 0 80px;
+  font-family: "museo-slab", sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	color: #003868;
+}
+
+h1.rule:before {
+	right: .5em;
+	margin-left: -50%;
+}
+
+h1.rule:before, h1.rule:after {
+	background-color: #003868;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#footer-content {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	text-align: right;
+}
+
+#footer-content p {
+	padding: 20px 0 0 0;
+	margin: 0;
+	color: #000;
+	font-size: 14px;
+}
+
+#wrapper {
+	min-height: 100%;
+	width: 100%;
+	border-top: 10px solid #293f65;
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+#header {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+#logo-container {
+	float: left;
+}
+
+.decorated {
+  overflow: hidden;
+  text-align: center;
+ }
+.decorated > span {
+  position: relative;
+  display: inline-block;
+}
+.decorated > span:before, .decorated > span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid;
+  width: 592px; /* half of limiter */
+  margin: 0 20px;
+}
+.decorated > span:before {
+  right: 100%; 
+}
+.decorated > span:after {
+  left: 100%;
+}
+
+.logo {
+	margin: 20px 0 12px 0;
+	max-width: 247px;
+}
+
+#tagline {
+	float: left;
+	clear: both;
+}
+
+#tagline-mobile {
+	display: none;
+}
+
+#tagline h4 {
+	margin: 0;
+}
+
+#menu-container {
+	margin-top: 28px;
+}
+
+.menu {
+	margin: 10px 0 0 0;
+	padding-top: 3px;
+	text-align: right;
+}
+
+.menu li {
+	background: #f5f5f5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-bottom: 2px solid #e9e9e9;
+	margin-right: 5px;
+}
+
+.menu li:last-child {
+	margin-right: 0;
+}
+
+.menu li a {
+	padding: 10px 20px;
+	display: block;
+}
+
+.clearfix {
+	clear: both;
+	zoom: 1;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#contact-info {
+	text-align: right;
+	padding: 25px 0 10px 0;
+}
+
+#contact-info h3 {
+	margin: 0;
+}
+
+#contact-info p {
+	margin: 0;
+	font-size: 14px;
+}
+
+#contact-info a {
+	color: gray;
+	text-decoration: none;
+}
+
+#banner-container {
+	background: url('images/blue-sky.jpg') no-repeat center center scroll;
+	background-size: cover;
+	width: 100%;
+	border-bottom: 5px solid #fff;
+}
+
+#banner-images-container {
+	max-width: 1095px;
+	margin: auto;
+	border-left: 5px solid #fff;
+}
+
+#location-shot {
+	float: left;
+	width: 542px;
+	border-right: 5px solid #fff;
+}
+
+.location-shot {
+  width: 100%;
+  display: block;
+}
+
+.float {
+	float: left;
+}
+
+#mobile-buttons {
+	display: none;
+}
+
+/* Dropdown menu
+-------------------------------------------------------------*/
+
+.show-menu {
+	text-decoration: none;
+	color: gray;
+	cursor: pointer;
+	line-height: 30px;
+	background: #f5f5f5;
+	padding: 10px 20px;
+	border-bottom: 2px solid #e9e9e9;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	font-weight: 700;
+	font-size: 18px;
+}
+.show-menu:hover {
+	color: gray;
+}
+.answer {
+}
+input[type=checkbox] ~ .answer {
+    display: none;
+}
+input[type=checkbox]:checked ~ .answer {
+    display: block;
+}
+input[type=checkbox] {
+    display: none;
+}
+
+.align-cent {
+	width: 100%;
+	margin-top: -42px;
+	margin-bottom: -4px;
+}
+
+#quote-container {
+	background: #88bc50;
+	width: 100%;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	margin-top: -4px;
+}
+
+#quote-container h2 {
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	font-size: 36px;
+}
+
+#main-content {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+/* Slide Show
+------------------------------------------------*/
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0;
+    margin: auto;
+}
+  
+#slider-container {
+  width: 542px;
+  position: relative;
+  float: left;
+  border-right: 5px solid #fff;
+}
+
+#map-container {
+	width: 100%;
+}
+
+.rslides_nav.rslides1_nav.next {
+	z-index: 999999;
+	position: absolute;
+	text-decoration: none;
+	bottom: 55%;
+	right: 6%;
+	color: #fff;
+	
+}
+
+.next:before {
+	content: url('images/arrow-right.png');
+	position: absolute;
+}
+
+.rslides_nav.rslides1_nav.prev {
+	z-index: 999999;
+	position: absolute;
+	text-decoration: none;
+	bottom: 55%;
+	left: 2%;
+	color: #fff;
+}
+
+.prev:before {
+	content: url('images/arrow-left.png');
+	position: absolute;
+}
+
+#services-container {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	background: url('images/surgeons-bg.jpg') no-repeat center center scroll;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	position: relative;
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+
+.services-content-container {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	text-align: center;
+	/*background: rgba(255, 255, 255, .75);*/
+	background: radial-gradient(circle, rgba(255,255,255,0.7), rgba(255, 255, 255, 1));
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+}
+
+#services-content {
+	padding: 30px;
+	max-width: 1020px;
+	margin: auto;
+}
+
+#services-content h2, #services-content p {
+	margin: 0;
+}
+
+#services-content p {
+	padding: 10px 0 20px 0;
+	color: #000;
+}
+
+#services-content h2 {
+	padding: 20px 0 0 0;
+	color: #a7a9ac;
+	font-size: 30px;
+	line-height: 32px;
+}
+
+.show {
+	display: none;
+}
+
+.services-container-inner {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.service-module {
+	padding: 20px;
+	text-align: center;
+}
+
+.service-module p {
+	margin: 0;
+}
+
+#services-container h3 {
+	margin: 0;
+	font-family: sans-serif;
+	padding: 0 0 10px 0;
+}
+
+.bullets {
+	font-family: sans-serif;
+	line-height: 30px;
+	padding: 0 0 0 16px;
+	margin: 0;
+}
+
+#footer {
+	position: relative;
+	margin-top: -150px;
+	height: 150px;
+	clear:both;
+	width: 100%;
+	background: url('images/footer2.png');
+}
+
+.scrolloff {
+  pointer-events: none;
+}
+
+.footer-content {
+	margin: 0px auto;
+	width: 68%;
+	text-align: right;
+	padding-top: 80px;
+	font-family: "museo-slab", serif;
+}
+
+.menu {
+	font-family: "museo-slab", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.menu li {
+	list-style: none;
+	display: inline-block;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu li a:hover {
+	color: #88bc50;
+}
+
+#home-title {
+	width: 100%;
+	text-align: center;
+	font-family: "museo-slab", sans-serif;
+	background: #78d170;
+	margin-top: -20px;
+	color: #fff;
+	font-size: 16px;
+}
+
+p {
+	font-family: "museo-slab", sans-serif;
+	font-size: 18px;
+	color: gray;
+	line-height: 34px;
+}
+
+.tagline {
+	float: right;
+}
+
+#disclaimer-text {
+	font-size: 14px;
+	font-family: "museo-slab", sans-serif;
+	padding-top: 10px;
+	border-top-style: solid;
+	border-top-color: #000;
+	border-top-width: 1px;
+}
+
+#map {
+	padding-left: 10px;
+}
+
+#building-image {
+	float: right;
+	padding-right: 10px;
+}
+
+div.title {
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+	background: url('images/title-bg-2.jpg') no-repeat;
+	clear: both;
+	margin-top: 160px;
+}
+
+.services {
+	margin-top: 10px;
+	float: left;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: "museo-slab", sans-serif;
+	color: #293f65;
+}
+
+#bullets li {
+	font-family: "museo-slab", sans-serif;
+	font-size: 20px;
+	line-height: 36px;
+	color: #293f65;
+	margin-left: -20px;
+}
+
+#or-photo {
+	max-width: 100%;
+	float: right;
+	margin-top: 35px;
+}
+
+.top-border {
+	height: 10px;
+	background: #293f65;
+	width: 100%;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+#map-photo {
+	margin: 0 auto;
+	padding: 70px 0px;
+	width: 1000px;
+}
+
+span#contact-info {
+	font-family: "museo-slab", sans-serif;
+	font-size: 19px;
+	border-bottom: 1px dotted #293f65;
+	color: #293f65;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+
+select {
+  display: none;
+}
+
+#bullets li {
+	text-align: left;
+}
+
+
+@media screen and (max-width: 570px)
+			  and (min-width: 320px) {
+
+
+
+li a {
+	color: #293f65;
+	padding: 15px;
+}
+
+li a:hover {
+	color: #771e22;
+}
+
+.image {
+	margin-bottom: -1px;
+}
+
+.services {
+	float: none;
+	text-align: left;
+
+}
+
+h2 {
+	font-size: 30px;
+}
+
+#bullets li {
+	text-align: left;
+	margin-left: -18px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#disclaimer-text {
+	font-size: 10px;
+}
+
+.footer-content {
+	width: 100%;
+	padding-top: 90px;
+	text-align: center;
+}
+
+#home-title {
+	margin-top: -17px;
+}
+
+.header {
+	width: 100%;
+	margin-top: -10px;
+	text-align: center;
+}
+
+div.title {
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+
+#or-photo {
+	margin-top: 10px;
+}
+
+iframe {
+	width: 100%;
+}
+
+#building-image {
+	display: none;
+}
+
+#map-photo {
+	width: 100%;
+}
+
+span#contact-info {
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 30px;
+	border-bottom: none;
+	margin: 0px;
+}
+
+span#map {
+	margin-top: -50px;
+}
+
+html, body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+}
+
+@media only screen and (min-width: 800px)
+                   and (max-width: 1100px) {
+
+#header {
+	width: 93%;
+}
+
+#banner-images-container {
+	border-left: none;
+	margin: auto;
+	max-width: none;
+}
+
+#banner-container {
+	background: none;
+}
+
+#location-shot {
+	width: 49.75%;
+	border-right: none;
+	margin-right: .5%;
+}
+
+#slider-container {
+	width: 49.75%;
+	border-right: none;
+}
+
+.rslides img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+
+#footer-content p {
+	padding-right: 30px;
+}
+
+.services-content-container {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+}
+
+@media only screen and (max-width: 800px) {
+
+#map-container, #slider-container, #location-shot, #slider-container {
+	float: none;
+	width: 100%;
+}
+
+.rslides_nav.rslides1_nav.next {
+	right: 5%;
+}
+
+#slider-container {
+	padding-right: 0;
+}
+
+#location-shot, #slider-container {
+	border-right: none;
+}
+
+#location-shot {
+	border-bottom: 5px solid #fff;
+}
+
+#banner-images-container {
+	border-right: none;
+	border-left: none;
+}
+
+/*.clearfix {
+	overflow: inherit;
+}*/
+
+#header {
+	width: 90%;
+}
+
+.rslides img {
+	height: auto;
+	width: 100%;
+	margin-left: 0;
+}
+
+#banner-container {
+	background: none;
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+#footer-content {
+	text-align: center;
+}
+
+#footer-content p {
+	padding-right: 0;
+}
+
+.rslides_nav.rslides1_nav.next {
+	right: 6%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+
+.show {
+	display: block;
+}
+
+#contact-info p.show {
+	line-height: 23px;
+	margin-top: 10px;
+}
+
+.rslides_nav.rslides1_nav.next {
+	right: 8%;
+}
+
+.hide {
+	display: none;
+}
+
+#tagline-mobile h4 {
+	font-size: 20px;
+}
+
+#services-content p {
+	line-height: 30px;
+}
+}
+
+@media only screen and (max-width: 980px) {
+
+#contact-info, #logo-container {
+	float: none;
+	text-align: center;
+}
+
+#contact-info {
+	padding-top: 0;
+}
+
+#contact-info h3 {
+	margin-bottom: 20px;
+}
+
+#menu-container {
+	float: none;
+}
+
+#tagline {
+	float: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.menu {
+	text-align: center;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.menu li {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+}
+
+@media only screen and (min-width: 280px)
+                   and (max-width: 600px) {
+
+#mobile-buttons {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+#menu-container {
+	margin-top: 0;
+}
+
+#tagline {
+	display: none;
+}
+
+#tagline-mobile {
+	display: block;
+	text-align: center;
+}
+
+#tagline-mobile h4 {
+	margin: 0;
+	padding: 10px 0 20px 0;
+}
+
+.button-1 {
+	width: 26%;
+	margin-right: 2%;
+	height: 42px;
+	display: table;
+	float: left;
+}
+
+.button-2 {
+	width: 31%;
+	margin-right: 2%;
+	display: table;
+	height: 42px;
+	float: left;
+}
+
+.button-3 {
+	width: 39%;
+	display: table;
+	height: 42px;
+	float: left;
+}
+
+.inner-button {
+	height: 100%;
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+}
+
+.button-1 a, .button-2 a, .button-3 a {
+	background: #f5f5f5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-bottom: 2px solid #e9e9e9;
+	color: #000;
+	text-decoration: none;
+	font-family: "museo-slab", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 10px 5%;
+	display: block;
+	height: 100%;
+}
+
+.button:last-child {
+	margin-right: 0;
+}
+
+.button a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-decoration: none;
+	font-family: "museo-slab", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+}
