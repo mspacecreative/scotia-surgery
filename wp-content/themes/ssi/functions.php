@@ -2,7 +2,7 @@
 
 function footer_scripts() 
 {
-	wp_register_script('jquery-cdn', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', array('jquery'), null, true);
+	wp_register_script('jquery-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array('jquery'), null, true);
 	wp_enqueue_script('jquery-cdn');
 	
 	wp_register_script('slider', get_template_directory_uri() . '/js/slick/slick.min.js', array('jquery'), null, true);
