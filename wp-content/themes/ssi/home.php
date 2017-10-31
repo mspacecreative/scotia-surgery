@@ -9,16 +9,14 @@ Template Name: Home
 				<div id="location-shot">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/location-shot.jpg" class="location-shot">
 				</div>
-				<div id="slider-container" class="float">
-					<ul class="rslides">
-						<li><img src="<?php echo get_template_directory_uri(); ?>/images/reception.jpg"></li>
-					  <li><img src="<?php echo get_template_directory_uri(); ?>/images/consultation.jpg" alt=""></li>
-					  <li><img src="<?php echo get_template_directory_uri(); ?>/images/oral-operatory.jpg"</li>
-					  <li><img src="<?php echo get_template_directory_uri(); ?>/images/continuing-education.jpg" alt=""></li>
-					  <li><img src="<?php echo get_template_directory_uri(); ?>/images/operating-theatre.jpg" alt=""></li>
-					  <li><img src="<?php echo get_template_directory_uri(); ?>/images/sterilization.jpg"</li>
-					  <li><img src="<?php echo get_template_directory_uri(); ?>/images/recovery.jpg"</li>
-					</ul>
+				<div class="photo-slider">
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/reception.jpg" alt=""><div>
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/consultation.jpg" alt=""></div>
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/oral-operatory.jpg" alt=""></div>
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/continuing-education.jpg" alt=""></div>
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/operating-theatre.jpg" alt=""></div>
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/sterilization.jpg" alt=""></div>
+					<div><img src="<?php echo get_template_directory_uri(); ?>/images/recovery.jpg" alt=""></div>
 				</div>
 			</div>
 		</div>
