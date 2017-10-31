@@ -2,9 +2,6 @@
 
 function footer_scripts() 
 {
-	wp_register_script('jquery-cdn', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', array('jquery'), null, true);
-	wp_enqueue_script('jquery-cdn');
-	
 	wp_register_script('slider', 'http://responsiveslides.com/responsiveslides.min.js', array('jquery'), null, true);
 	wp_enqueue_script('slider');
 	
