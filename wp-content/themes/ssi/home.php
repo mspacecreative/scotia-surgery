@@ -1,33 +1,36 @@
 <?php
-/*
-Template Name: Home
-*/
-?>
-<?php get_header(); ?>
-<div id="banner-container">
-			<div id="banner-images-container" class="clearfix">
-				<div id="location-shot">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/location-shot.jpg" class="location-shot">
-				</div>
-				<div class="photo-slider">
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/reception.jpg" alt=""><div>
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/consultation.jpg" alt=""></div>
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/oral-operatory.jpg" alt=""></div>
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/continuing-education.jpg" alt=""></div>
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/operating-theatre.jpg" alt=""></div>
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/sterilization.jpg" alt=""></div>
-					<div><img src="<?php echo get_template_directory_uri(); ?>/images/recovery.jpg" alt=""></div>
-				</div>
+/* Template Name: Home */
+
+get_header(); ?>
+
+	<div id="banner-container">
+		<div id="banner-images-container" class="clearfix">
+		
+			<div id="location-shot">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/location-shot.jpg" class="location-shot">
 			</div>
+			
+			<div class="photo-gallery">
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/reception.jpg" alt=""><div>
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/consultation.jpg" alt=""></div>
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/oral-operatory.jpg" alt=""></div>
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/continuing-education.jpg" alt=""></div>
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/operating-theatre.jpg" alt=""></div>
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/sterilization.jpg" alt=""></div>
+				<div><img src="<?php echo get_template_directory_uri(); ?>/images/recovery.jpg" alt=""></div>
+			</div>
+			
 		</div>
-		<!--<div id="quote-container">
-			<h2>A surgical clinic serving Atlantic Canada</h2>
-		</div>-->
+		<!--IMAGES CONTAINER-->
+	</div>
+	<!--BANNER CONTAINER-->
+		
 		<div id="main-content" class="clearfix">
 			<div id="map-container">
 				<iframe id="map_canvas1" width="100%" height="353" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=18+Acadia+Street+Dartmouth,+NS&amp;ie=UTF8&amp;hq=&amp;hnear=18+Acadia+St,+Dartmouth,+Nova+Scotia+B2Y+4H3&amp;ll=44.655709,-63.54958&amp;spn=0.006189,0.012982&amp;t=m&amp;z=14&amp;output=embed"></iframe>
 			</div>
 		</div>
+		
 		<div id="services-container">
 			<div class="services-content-container">
 				<div id="services-content">

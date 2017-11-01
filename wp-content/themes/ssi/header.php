@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
-		<title>Welcome to Scotia Surgery</title>
-	
-		<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+		<meta charset="<?php bloginfo('charset'); ?>">
+		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="//use.typekit.net/jis0xvl.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<?php wp_head(); ?>
 	</head>
-	<body>
+	<body <?php body_class(); ?>>
 		<div id="wrapper">
 			<div id="container">
 				<div id="header" class="clearfix">

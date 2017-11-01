@@ -1,9 +1,3 @@
-$('.photo-slider').slick({
-    adaptiveHeight: true,
-    autoplay: true,
-    arrows: true
-});
-
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -17,4 +11,8 @@ $(function() {
       }
     }
   });
+});
+
+$('.photo-gallery').slick({
+  autoplay: true,
 });

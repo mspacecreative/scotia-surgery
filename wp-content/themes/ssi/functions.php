@@ -4,7 +4,10 @@ function footer_scripts() {
 	wp_register_script('jquery-cdn', 'http://code.jquery.com/jquery-1.11.0.min.js', array('jquery'), null, true);
 	wp_enqueue_script('jquery-cdn');
 	
-	wp_register_script('slick', get_template_directory_uri() . '/js/slick/slick.min.js', array('jquery'), null, true);
+	wp_register_script('jquery-migrate', 'http://code.jquery.com/jquery-migrate-1.2.1.min.js', array('jquery'), null, true);
+	wp_enqueue_script('jquery-migrate');
+	
+	wp_register_script('slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), null, true);
 	wp_enqueue_script('slick');
 	
 	wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
