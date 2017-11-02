@@ -26,7 +26,3 @@ function locationResize() {
 $(document).ready(function() {
 	locationResize();
 });
-
-$(window).resize(function() {
-	locationResize();
-});
