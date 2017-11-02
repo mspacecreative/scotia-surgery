@@ -195,6 +195,10 @@ footer {
 	overflow: hidden;
 }
 
+.photo-gallery div {
+	background-size: cover!important;
+}
+
 #banner-images-container {
 	max-width: 1080px;
 	margin: auto;
@@ -207,7 +211,7 @@ footer {
 	width: 50%;
 	border-right: 5px solid #fff;
 	overflow: hidden;
-	background: url(images/location-shot.jpg);
+	background: url(images/location-shot.jpg) no-repeat center center scroll;
 	background-size: cover;
 }
 
@@ -743,49 +747,6 @@ html, body {
 }
 }
 
-@media only screen and (max-width: 800px) {
-
-#map-container, #slider-container, #location-shot, #slider-container {
-	float: none;
-	width: 100%;
-}
-
-.rslides_nav.rslides1_nav.next {
-	right: 5%;
-}
-
-#slider-container {
-	padding-right: 0;
-}
-
-#location-shot, #slider-container {
-	border-right: none;
-}
-
-#location-shot {
-	border-bottom: 5px solid #fff;
-}
-
-#location-shot, .photo-gallery {
-	float: none;
-	width: 100%;
-}
-
-#header {
-	width: 90%;
-}
-
-.rslides img {
-	height: auto;
-	width: 100%;
-	margin-left: 0;
-}
-
-#banner-container {
-	background: none;
-}
-}
-
 @media only screen and (max-width: 700px) {
 
 #footer-content {
@@ -985,7 +946,7 @@ html, body {
 }
 
 #banner-container {
-  height: auto;
+  height: 330px;
 }
 
 .location-shot {
@@ -1022,9 +983,63 @@ html, body {
 }
 }
 
+@media (max-width: 1199px) {
+
+#location-shot, .photo-gallery div {
+	min-height: 325px;
+}
+}
+
 @media (min-width: 1200px) {
 
-img.slick-slide {
+#location-shot, .photo-gallery, .photo-gallery div {
 	min-height: 400px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+
+#map-container, #slider-container, #location-shot, #slider-container {
+	float: none;
+	width: 100%;
+}
+
+.rslides_nav.rslides1_nav.next {
+	right: 5%;
+}
+
+#slider-container {
+	padding-right: 0;
+}
+
+#location-shot, #slider-container {
+	border-right: none;
+}
+
+#location-shot {
+	border-bottom: 5px solid #fff;
+}
+
+#location-shot, .photo-gallery {
+	float: none;
+	width: 100%;
+}
+
+#banner-container {
+	height: auto;
+}
+
+#header {
+	width: 90%;
+}
+
+.rslides img {
+	height: auto;
+	width: 100%;
+	margin-left: 0;
+}
+
+#banner-container {
+	background: none;
 }
 }

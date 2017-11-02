@@ -18,11 +18,3 @@ $('.photo-gallery').slick({
   arrows: true,
   dots: true,
 });
-
-function locationResize() {
-	$("#location-shot, .photo-gallery").css({'height':($("#banner-container").outerHeight()+'px')});
-}
-
-$(document).ready(function() {
-	locationResize();
-});

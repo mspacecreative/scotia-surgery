@@ -11,13 +11,13 @@ get_header(); ?>
 			</div>
 			
 			<div class="photo-gallery">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/reception.jpg" alt="">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/consultation.jpg" alt="">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/oral-operatory.jpg" alt="">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/continuing-education.jpg" alt="">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/operating-theatre.jpg" alt="">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/sterilization.jpg" alt="">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/recovery.jpg" alt="">
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/reception.jpg') no-repeat center center scroll;"></div>
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/consultation.jpg') no-repeat center center scroll;"></div>
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/oral-operatory.jpg') no-repeat center center scroll;"></div>
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/continuing-education.jpg') no-repeat center center scroll;"></div>
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/operating-theatre.jpg') no-repeat center center scroll;"></div>
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/sterilization.jpg') no-repeat center center scroll;"></div>
+				<div style="background: url('<?php echo get_template_directory_uri(); ?>/images/recovery.jpg') no-repeat center center scroll;"></div>
 			</div>
 			
 		</div>
