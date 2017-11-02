@@ -193,6 +193,7 @@ footer {
 	width: 100%;
 	border-bottom: 5px solid #fff;
 	overflow: hidden;
+	-ms-overflow-style: none;
 }
 
 .photo-gallery div {
