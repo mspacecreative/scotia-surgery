@@ -20,7 +20,7 @@ $('.photo-gallery').slick({
 });
 
 function locationResize() {
-	$("#location-shot, .photo-gallery").css({'height':($("#banner-container").height()+'px')});
+	$("#location-shot, .photo-gallery").css({'height':($("#banner-container").outerHeight()+'px')});
 }
 
 $(document).ready(function() {
