@@ -933,6 +933,10 @@ html, body {
 	width: 100%;
 }
 
+#header {
+	width: 90%;
+}
+
 #banner-images-container {
 	border-right: none;
 	border-left: none;
@@ -1028,10 +1032,6 @@ html, body {
 
 #banner-container {
 	height: auto;
-}
-
-#header {
-	width: 90%;
 }
 
 .rslides img {
