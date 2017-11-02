@@ -1003,4 +1003,8 @@ html, body {
 .hide {
 	display: none;
 }
+
+#services-content .show {
+	display: block;
+}
 }
