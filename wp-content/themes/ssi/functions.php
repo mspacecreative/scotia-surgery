@@ -12,6 +12,9 @@ function footer_scripts() {
 	
 	wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 	wp_enqueue_script('scripts');
+	
+	wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), null, true);
+	wp_enqueue_script('fontawesome');
 }
 
 function custom_stylesheets() {

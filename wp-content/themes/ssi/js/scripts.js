@@ -15,4 +15,18 @@ $(function() {
 
 $('.photo-gallery').slick({
   autoplay: true,
+  arrows: true,
+  dots: true,
+});
+
+function locationResize() {
+	$("#location-shot, .photo-gallery").css({'height':($("#banner-container").height()+'px')});
+}
+
+$(document).ready(function() {
+	locationResize();
+});
+
+$(window).resize(function() {
+	locationResize();
 });
