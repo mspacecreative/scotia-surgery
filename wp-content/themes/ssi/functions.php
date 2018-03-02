@@ -23,5 +23,10 @@ function custom_stylesheets() {
   wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/css/slick-theme.css');
 }
 
+function register_my_menu() {
+  register_nav_menu( 'primary', __( 'Primary Menu', 'ssi' ) );
+}
+
 add_action( 'wp_enqueue_scripts', 'custom_stylesheets');
 add_action('init', 'footer_scripts');
+add_action( 'after_setup_theme', 'register_my_menu' );
